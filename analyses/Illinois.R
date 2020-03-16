@@ -23,7 +23,7 @@ plot(x = tail(date.vec, 34), y = tail(IL$rili_minus, 34), type = "l", col = 2,
      ylim = c(min(IL$rili_minus, na.rm = TRUE),
               max(IL$rili_minus, na.rm = TRUE)),
      xlab = "Date", ylab = "% ILI visits",
-     main = "rILI Seasonality")
+     main = "Illinois's rILI Seasonality")
 
 for(i in 1:length(start.ind)){
   temp.ind <- start.ind[i]:(start.ind[i] + 33)
