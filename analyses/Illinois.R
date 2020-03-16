@@ -31,3 +31,5 @@ for(i in 1:length(start.ind)){
 }
 lines(x = tail(date.vec, 34), y = tail(IL$avg_rili_minus1, 34), lwd = 2)
 lines(x = tail(date.vec, 34), y = tail(IL$rili_minus, 34), type = "l", col = 2, lwd = 2)
+legend("topleft", legend=c("2019-2020", "Seasonal Average", "Previous Years"),
+       col=c("red", "black", "gray"), lty=1, cex=0.8)
